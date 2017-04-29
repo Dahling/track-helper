@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="bootstrap.min.js"></script>
+    <script src="npm.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Track Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+        <h1>Track Suggester</h1>
+      </div><!--header-->
+      <form id="tracksuggester">
+        <div class="row">
+          <div class="col-md-12">
+            <label for="platform">What platform are you interested in?</label>
+            <select id="platform">
+              <option value="windows">Windows</option>
+              <option value="mac">Mac/iOS</option>
+              <option value="android">Android</option>
+            </select>
+          </div><!--column one-->
+        </div><!--row one-->
+        <div class="row">
+          <div class="col-md-12">
+            <label for="career">I would like to work at...</label>
+            <select id="career">
+              <option value="developer">A large company</option>
+              <option value="startup">A Start-up</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label for="personality">If I had to choose, I'd say I am...</label>
+            <select id="personality">
+              <option value="visual">Visual</option>
+              <option value="informational">Informational</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button type="submit" class="btn">Which track should I take?</button>
+          </div>
+        </div>
+      </form>
+
+      <div id="statement">
+        <p>You are well suited for ... <span id="track"></span></p>
+      </div>
+
+    </div><!--container-->
+  </body>
