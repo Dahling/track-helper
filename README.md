@@ -11,13 +11,13 @@ _This is a "track suggester". The purpose of it is to help someone figure out wh
 ## Setup/Installation Requirements
 
 * _Clone this Repository onto your Desktop_
-* _Open up the HTML file in the web browser of your choosing_
-* _Hope you have a lovely day_
+* _Open up the HTML file in the web browser of your choosing (I like Firefox, but apparently it's not one of the cool kids..._
+* _Have a lovely day_
 
 
 ## Known Bugs
 
-There are no known bugs; but, if there is, I hope it's a ladybug.
+I'm not sure there's any sort of bug; but, if there is, I hope it's a ladybug.
 
 ## Support and contact details
 
