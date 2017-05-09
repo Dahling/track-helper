@@ -3,8 +3,6 @@
   <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="bootstrap.min.js"></script>
-    <script src="npm.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
@@ -12,56 +10,68 @@
   </head>
   <body>
     <div class="container">
-      <div id="header">
-        <h1>Magic-Track 8-Ball</h1>
-      </div><!--header-->
       <form id="tracksuggester">
+      <div id="header">
+        <h1>Magic "Track" 8-Ball</h1>
+        <h4>Your destiny awaits you... Answer the following questions, and the Magic <em>Track</em> 8-Ball which show you your <em>possible</em> destiny.</h4>
+      </div><!--header-->
+      <div class="form-group">
         <div class="row">
           <div class="col-md-12">
-            <p>When it comes to creation, what's your favorite part?</p>
-            <select id="development">
-              <option value="front-end">I like making things look good!</option>
-              <option value="back-end">I enjoy making stuff work well.</option>
+            <label>When it comes to working on computers, what's ideal?</label>
+            <select class="form-control" id="ideal" required>
+              <option value="1">Making things look fancy, and having them be fun for the user.</option> <!--css-->
+              <option value="2">Working on a wide-range of things: web, desktop and mobile apps!</option> <!--java-->
+              <option value="3">Simply put -transforming an idea into a working application.</option> <!--ruby-->
             </select>
           </div><!--column one-->
         </div><!--row one-->
+      </div> <!--end-->
+      <div class="form-group">
         <div class="row">
           <div class="col-md-12">
-            <p>What platform are you most interested in?</p>
-            <select id="platform">
-              <option value="windows">Windows</option>
-              <option value="mac">Mac/iOS</option>
-              <option value="android">Android</option>
+            <label>What platform are you most interested in?</label>
+            <select class="form-control" id="platform" required>
+              <option value="1">All about that Apple: Mac/iOS.</option> <!--css-->
+              <option value="2">Android</option> <!--Java-->
+              <option value="3">Windows</option> <!--Ruby-->
             </select>
           </div><!--column two-->
         </div><!--row two-->
+      </div> <!--end-->
+      <div class="form-group">
         <div class="row">
           <div class="col-md-12">
-            <p>What type of company would you like to work for?</p>
-            <select id="career">
-              <option value="large">I'd prefer to join a large corporation!</option>
-              <option value="small">A small buisness or start-up would be great.</option>
+            <label>What type of job would you like?</label>
+            <select class="form-control" id="job" required>
+              <option value="1">I don't care; I just want a good vibe!</option> <!--css-->
+              <option value="2">I'd prefer to join a large corporation!</option> <!--Java-->
+              <option value="3">A small buisness or start-up would be great.</option> <!--Ruby-->
             </select>
           </div><!--column three-->
         </div><!--row three-->
+      </div> <!--end-->
+      <div class="form-group">
         <div class="row">
           <div class="col-md-12">
-            <p>If I had to choose, I'd say I am...</p>
-            <select id="personality">
-              <option value="visual">Visual</option>
-              <option value="informational">Informational</option>
+            <label>What are you most interested in creating?</label>
+            <select class="form-control" id="creation" required>
+              <option value="1">Websites, most defintely.</option> <!--css-->
+              <option value="2">Anything involving mobile development.</option> <!--Java-->
+              <option value="3">Applications like Twitter!</option><!--Ruby-->
             </select>
-          </div>
-        </div>
+          </div> <!--column four-->
+        </div> <!--row four-->
+      </div> <!--end-->
         <div class="row">
           <div class="col-md-12">
-            <button type="submit" class="btn">Which track should I take?</button>
-          </div>
-        </div>
+            <button type="submit" class="btn">What's my Epicodus "track" destiny?</button>
+          </div> <!--column six-->
+        </div> <!--row six-->
       </form>
 
       <div id="statement">
-        <p><span id="track"></span></p>
+        <label><span id="track"></span></label>
       </div>
 
     </div><!--container-->

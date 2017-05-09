@@ -1,57 +1,39 @@
+//back
+
+var add = function(num1, num2, num3) {
+  return num1 + num2 + num3;
+};
+
+
+//front-end
+
 $(document).ready(function() {
-
   $("form#tracksuggester").submit(function(event) {
-    var development = $("#development").val();
-    var platform = $("#platform").val();
-    var career = $("#career").val();
-    var personality = $("#personality").val();
+    var ideal = parseInt($("#ideal").val());
+    var platform = parseInt($("#platform").val());
+    var job = parseInt($("#job").val());
+    var creation = parseInt($("#creation").val());
+    var userInput = add(ideal, platform, job, creation);
 
-    if (platform === "windows") {
-      if (development === "front-end" ) {
-        $("#track").empty().append("CSS");
-      } else if (development === "back-end") {
-        $("#track").empty().append("Ruby");
-      } else if (career === "large") {
-        $("#track").empty().append("C#");
-      } else if (career === "small") {
-        $("#track").empty().append("Ruby");
-      } else if (personality === "visual") {
-        $("#track").empty().append("CSS");
-      } else {
-        $("#track").empty().append("C#, Java, PHP, or Ruby");
-      }
-    } else if (platform === "mac") {
-      if (development === "front-end" ) {
-        $("#track").empty().append("CSS");
-      } else if (development === "back-end") {
-        $("#track").empty().append("Ruby");
-      } else if (career === "large") {
-        $("#track").empty().append("PHP");
-      } else if (career === "small") {
-        $("#track").empty().append("Ruby");
-      } else {
-        $("#track").empty().append("Track3");
-      }
-    } else if (platform === "android"){
-      if (development === "front-end" ) {
-        $("#track").empty().append("CSS");
-      } else if (development === "back-end") {
-        $("#track").empty().append("Java");
-      } else if (career === "large") {
-        $("#track").empty().append("Java");
-      } else if (career === "small") {
-        $("track").empty().append("Java")
-      } else if (personality === "visual") {
-        $("#track").empty().append("CSS/Design");
-      } else {
-        $("#track").empty().append("C#, Java, PHP, or Ruby");
-      }
-    } else {
-      alert('Please enter your age.');
-      }
 
-    $("#statement").show();
+
+
+
+    if (userInput <= 4) {
+      $("#track").empty().append("CSS");
+    }
+    else if (userInput === 5 || userInput <= 8) {
+      $("#track").empty().append("Java");
+    }
+    else if (userInput === 9 || userInput <= 12) {
+      $("#track").empty().append("Ruby");
+    }
+    else {
+      $("#track").empty().append("Ruby");
+    }
 
     event.preventDefault();
+    $("#statement").show();
+
   });
 });
