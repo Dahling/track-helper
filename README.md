@@ -17,7 +17,7 @@ _This is a "track suggester". The purpose of it is to help someone figure out wh
 
 ## Known Bugs
 
-_I'm still finding my way, as far as Javascript, thus there might be a few bugs crawling around in this one. C'est la vie._
+There are no known bugs; but, if there is, I hope it's a ladybug.
 
 ## Support and contact details
 
