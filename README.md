@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a "track suggester". The purpose of it is to help someone figure out which "track" they should take at Epicodus. One may do so by answering the questions and clicking the submit button._
+_This is a "track suggester." The purpose of it is to help someone figure out which "track" they should take at Epicodus. One may do so by answering the questions and clicking the submit button. Lord knows you'd like some answers to your life. As the Beach Boys once sang, "Oh, wouldn't it be nice?"_
 
 ## Setup/Installation Requirements
 
