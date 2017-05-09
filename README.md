@@ -11,7 +11,7 @@ _This is a "track suggester". The purpose of it is to help someone figure out wh
 ## Setup/Installation Requirements
 
 * _Clone this Repository onto your Desktop_
-* _Open up the HTML file in the web browser of your choosing (I like Firefox, but apparently it's not one of the cool kids..._
+* _Open it up, via your favorite browser (...I like Firefox, but apparently it's not one of the cool kids...)._
 * _Have a lovely day_
 
 
