@@ -1,7 +1,7 @@
 //back
 
-var add = function(num1, num2, num3) {
-  return num1 + num2 + num3;
+var add = function(num1, num2, num3, num4, num5) {
+  return num1 + num2 + num3 + num4 + num5;
 };
 
 
@@ -13,7 +13,8 @@ $(document).ready(function() {
     var platform = parseInt($("#platform").val());
     var job = parseInt($("#job").val());
     var creation = parseInt($("#creation").val());
-    var userInput = add(ideal, platform, job, creation);
+    var confidence = parseInt($("#confidence").val());
+    var userInput = add(ideal, platform, job, creation, confidence);
 
 
 
@@ -22,14 +23,14 @@ $(document).ready(function() {
     if (userInput <= 4) {
       $("#track").empty().append("CSS");
     }
-    else if (userInput === 5 || userInput <= 8) {
+    else if (userInput >= 5 && userInput <= 8) {
       $("#track").empty().append("Java");
     }
-    else if (userInput === 9 || userInput <= 12) {
+    else if (userInput >= 9 && userInput <= 12) {
       $("#track").empty().append("Ruby");
     }
     else {
-      $("#track").empty().append("Ruby");
+      $("#track").empty().append("Try <br> Again");
     }
 
     event.preventDefault();
